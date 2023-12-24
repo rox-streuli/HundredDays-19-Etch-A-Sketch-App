@@ -12,6 +12,7 @@ def move_forward():
 
 def clear_screen():
     timy.clear()
+    timy.home()
 
 
 # Make screen awake of events
