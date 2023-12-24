@@ -20,7 +20,7 @@ def clear_screen():
 
 # Make screen awake of events
 screen.listen()
-screen.onkey(key='space', fun=move_forward)
+screen.onkey(key='w', fun=move_forward)
 screen.onkey(key='s', fun=move_backward)
 
 screen.onkey(key='c', fun=clear_screen)
