@@ -24,8 +24,9 @@ def turn_right():
 
 
 def clear_screen():
-    timy.clear()
-    timy.home()
+    timy.reset()
+    # timy.clear()
+    # timy.home()
 
 
 # Make screen awake of events
