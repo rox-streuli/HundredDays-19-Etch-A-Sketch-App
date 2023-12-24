@@ -1,3 +1,4 @@
+import turtle
 from turtle import Turtle, Screen
 
 timy = Turtle()
@@ -9,9 +10,15 @@ def move_forward():
     timy.forward(10)
 
 
+def reset_screen():
+    turtle.reset()
+
+
 # Make screen awake of events
 screen.listen()
 screen.onkey(key="space", fun=move_forward)
+
+screen.onkey(key='c', fun=reset_screen)
 
 # keep windows active until you click on it
 screen.exitonclick()
