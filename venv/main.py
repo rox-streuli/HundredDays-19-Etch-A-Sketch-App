@@ -10,6 +10,9 @@ def move_forward():
     timy.forward(10)
 
 
+def move_backward():
+    timy.backward(10)
+
 def clear_screen():
     timy.clear()
     timy.home()
@@ -17,7 +20,8 @@ def clear_screen():
 
 # Make screen awake of events
 screen.listen()
-screen.onkey(key="space", fun=move_forward)
+screen.onkey(key='space', fun=move_forward)
+screen.onkey(key='s', fun=move_backward)
 
 screen.onkey(key='c', fun=clear_screen)
 
